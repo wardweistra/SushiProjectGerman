@@ -1,0 +1,53 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "nl.wardweistra.acme",
+  "url": "https://fake-acme.org/fhir/IG/ImplementationGuide/nl.wardweistra.acme",
+  "version": "0.0.1",
+  "name": "TheACMEImplementationGuide",
+  "status": "active",
+  "packageId": "nl.wardweistra.acme",
+  "fhirVersion": [
+    "4.0.1"
+  ],
+  "dependsOn": [
+    {
+      "uri": "https://simplifier.net/guide/basisprofil-de-r4",
+      "packageId": "de.basisprofil.r4",
+      "id": "de_basisprofil_r4",
+      "version": "0.9.7"
+    }
+  ],
+  "definition": {
+    "resource": [
+      {
+        "reference": {
+          "reference": "StructureDefinition/profile-myPractitionerDeBasis"
+        },
+        "exampleBoolean": false,
+        "name": "MyPractitionerDeBasis"
+      }
+    ],
+    "page": {
+      "nameUrl": "toc.html",
+      "title": "Table of Contents",
+      "generation": "html",
+      "page": [
+        {
+          "nameUrl": "index.html",
+          "title": "Home",
+          "generation": "markdown"
+        }
+      ]
+    },
+    "parameter": [
+      {
+        "code": "copyrightyear",
+        "value": "2020+"
+      },
+      {
+        "code": "releaselabel",
+        "value": "STU1"
+      }
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+template: fhir.base.template#current
+
+id: nl.wardweistra.acme
+version: 0.0.1
+canonical: https://fake-acme.org/fhir/IG
+fhirVersion: 4.0.1
+name: "The ACME Implementation Guide"
+status: active
+copyrightYear: 2020+
+releaseLabel: STU1
+dependencies:
+  hl7.fhir.us.core: 3.1.0
+  # de.basisprofil.r4: 0.9.7 # uri: https://simplifier.net/guide/basisprofil-de-r4, id: de_basisprofil_r4
+
+menu:
+  IG Home: index.html
+
+# pages:
+#   index.md:
+#     title: Example Home
